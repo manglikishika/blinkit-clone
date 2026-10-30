@@ -4,315 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blinkit - Groceries & Daily Essentials</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Blinkit Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">blink<span>it</span></div>
+<header class="header">
+    <a href="#" class="logo">blink<span>it</span></a>
 
-        <div class="delivery">
-            <h4>Delivery in 17 minutes</h4>
-            <p>Meerut, Uttar Pradesh ⌄</p>
+    <div class="delivery">
+        <h3>Delivery in 8 minutes</h3>
+        <p>Meerut, Uttar Pradesh <span>⌄</span></p>
+    </div>
+
+    <div class="search">
+        <span>⌕</span>
+        <input type="search" placeholder='Search "butter"'>
+    </div>
+
+    <button class="login">Login</button>
+    <button class="cart">🛒 My Cart</button>
+</header>
+
+<main class="container">
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Stock up on daily essentials</h1>
+            <p>
+                Get farm-fresh goodness &amp; a range of exotic
+                <br>
+                fruits, vegetables, eggs &amp; more
+            </p>
+            <a href="#categories">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- PROMOTIONAL CARDS -->
+    <section class="promotions">
+
+        <div class="promo pharmacy">
+            <div class="promo-content">
+                <h2>Pharmacy at<br>your doorstep!</h2>
+                <p>Cough syrups, pain<br>relief sprays &amp; more</p>
+                <button>Order Now</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400" alt="Pharmacy">
         </div>
 
-        <div class="search">
-            <span>⌕</span>
-            <input type="text" placeholder='Search "chocolate"'>
+        <div class="promo pets">
+            <div class="promo-content">
+                <h2>Pet care supplies<br>at your door</h2>
+                <p>Food, treats, toys &amp; more</p>
+                <button>Order Now</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400" alt="Dog">
         </div>
 
-        <button class="login">Login</button>
-        <button class="cart">🛒 My Cart</button>
-    </header>
+        <div class="promo baby">
+            <div class="promo-content">
+                <h2>No time for<br>a diaper run?</h2>
+                <p>Get baby care essentials</p>
+                <button>Order Now</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=400" alt="Baby care">
+        </div>
 
-    <main class="container">
+    </section>
 
-        <!-- MAIN BANNER -->
-        <section class="main-banner">
-            <div class="banner-content">
-                <h1>Stock up on daily essentials</h1>
-                <p>
-                    Get farm-fresh goodness & a range of exotic
-                    <br>fruits, vegetables, eggs & more
-                </p>
-                <button>Shop Now</button>
+    <!-- CATEGORIES -->
+    <section class="categories" id="categories">
+
+        <div class="category"><div class="product-art">🥫</div><p>Paan<br>Corner</p></div>
+        <div class="category"><div class="product-art">🥛</div><p>Dairy, Bread<br>&amp; Eggs</p></div>
+        <div class="category"><div class="product-art">🥬</div><p>Fruits &amp;<br>Vegetables</p></div>
+        <div class="category"><div class="product-art">🥤</div><p>Cold Drinks<br>&amp; Juices</p></div>
+        <div class="category"><div class="product-art">🍟</div><p>Snacks &amp;<br>Munchies</p></div>
+        <div class="category"><div class="product-art">🍪</div><p>Breakfast &amp;<br>Instant Food</p></div>
+        <div class="category"><div class="product-art">🍫</div><p>Sweet<br>Tooth</p></div>
+        <div class="category"><div class="product-art">🍞</div><p>Bakery &amp;<br>Biscuits</p></div>
+        <div class="category"><div class="product-art">☕</div><p>Tea, Coffee &amp;<br>Milk Drinks</p></div>
+        <div class="category"><div class="product-art">🍚</div><p>Atta, Rice<br>&amp; Dal</p></div>
+
+    </section>
+
+    <!-- ADULT CATEGORIES -->
+    <section class="adult-section">
+        <h2>Personal care &amp; daily essentials</h2>
+
+        <div class="adult-grid">
+            <div class="category"><div class="product-art">🧴</div><p>Personal<br>Care</p></div>
+            <div class="category"><div class="product-art">🪒</div><p>Men's<br>Grooming</p></div>
+            <div class="category"><div class="product-art">🌸</div><p>Perfumes &amp;<br>Deodorants</p></div>
+            <div class="category"><div class="product-art">🧖</div><p>Skin &amp;<br>Hair Care</p></div>
+            <div class="category"><div class="product-art">🪥</div><p>Oral<br>Care</p></div>
+            <div class="category"><div class="product-art">🩹</div><p>Health &amp;<br>Hygiene</p></div>
+            <div class="category"><div class="product-art">🌷</div><p>Women's<br>Care</p></div>
+            <div class="category"><div class="product-art">🧔</div><p>Men's<br>Care</p></div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <div class="section-heading">
+            <h2>Personal care essentials</h2>
+            <a href="#">See all →</a>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product">
+                <div class="product-image">🧴</div>
+                <small>8 MINS</small>
+                <h3>Daily Body Lotion</h3>
+                <p>200 ml</p>
+                <div class="price"><b>₹149</b><button>Add</button></div>
             </div>
 
-            <div class="banner-image">
-                <span>🥛</span>
-                <span>🍎</span>
-                <span>🥦</span>
-                <span>🥚</span>
-                <span>🍇</span>
-                <span>🍊</span>
-                <span>🥕</span>
-            </div>
-        </section>
-
-        <!-- PROMOTIONAL CARDS -->
-        <section class="promotions">
-
-            <div class="promo-card pharmacy">
-                <div>
-                    <h3>Pharmacy at<br>your doorstep!</h3>
-                    <p>Cough syrups, pain relief<br>sprays & more</p>
-                    <button>Order Now</button>
-                </div>
-                <div class="promo-emoji">💊</div>
+            <div class="product">
+                <div class="product-image">🪒</div>
+                <small>8 MINS</small>
+                <h3>Men's Shaving Kit</h3>
+                <p>1 pack</p>
+                <div class="price"><b>₹199</b><button>Add</button></div>
             </div>
 
-            <div class="promo-card pets">
-                <div>
-                    <h3>Pet care supplies<br>at your door</h3>
-                    <p>Food, treats, toys & more</p>
-                    <button>Order Now</button>
-                </div>
-                <div class="promo-emoji">🐕</div>
+            <div class="product">
+                <div class="product-image">🧴</div>
+                <small>8 MINS</small>
+                <h3>Nourishing Shampoo</h3>
+                <p>180 ml</p>
+                <div class="price"><b>₹129</b><button>Add</button></div>
             </div>
 
-            <div class="promo-card baby">
-                <div>
-                    <h3>No time for<br>a diaper run?</h3>
-                    <p>Get baby care essentials</p>
-                    <button>Order Now</button>
-                </div>
-                <div class="promo-emoji">👶</div>
+            <div class="product">
+                <div class="product-image">🪥</div>
+                <small>8 MINS</small>
+                <h3>Fresh Mint Toothpaste</h3>
+                <p>150 g</p>
+                <div class="price"><b>₹99</b><button>Add</button></div>
             </div>
 
-        </section>
-
-        <!-- GROCERY CATEGORIES -->
-        <section class="section">
-            <h2>Shop by Category</h2>
-
-            <div class="categories">
-
-                <div class="category">
-                    <div class="category-image">🌽</div>
-                    <p>Paan Corners</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🥛</div>
-                    <p>Dairy, Bread & Eggs</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🥬</div>
-                    <p>Fruits & Vegetables</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🥤</div>
-                    <p>Cold Drinks & Juices</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🍟</div>
-                    <p>Snacks & Munchies</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🍪</div>
-                    <p>Breakfast & Instant Food</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🍫</div>
-                    <p>Sweet Tooth</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🍞</div>
-                    <p>Bakery & Biscuits</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">☕</div>
-                    <p>Tea, Coffee & Milk Drinks</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🍚</div>
-                    <p>Atta, Rice & Dal</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🍜</div>
-                    <p>Instant Food</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧽</div>
-                    <p>Cleaning Essentials</p>
-                </div>
-
+            <div class="product">
+                <div class="product-image">🌸</div>
+                <small>8 MINS</small>
+                <h3>Daily Deodorant</h3>
+                <p>150 ml</p>
+                <div class="price"><b>₹179</b><button>Add</button></div>
             </div>
-        </section>
 
-        <!-- ADULT PERSONAL CARE -->
-        <section class="section">
-            <h2>Personal Care & Grooming</h2>
-            <p class="section-subtitle">Everyday essentials for men and women</p>
+        </div>
+    </section>
 
-            <div class="categories">
-
-                <div class="category">
-                    <div class="category-image">🪒</div>
-                    <p>Shaving & Grooming</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧴</div>
-                    <p>Perfumes & Deodorants</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧖</div>
-                    <p>Skin Care</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧔</div>
-                    <p>Hair Care</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🪥</div>
-                    <p>Oral Care</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">💪</div>
-                    <p>Health & Nutrition</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧼</div>
-                    <p>Personal Hygiene</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧦</div>
-                    <p>Fashion Essentials</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧻</div>
-                    <p>Bath & Body</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🌸</div>
-                    <p>Women's Care</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧴</div>
-                    <p>Men's Care</p>
-                </div>
-
-                <div class="category">
-                    <div class="category-image">🧺</div>
-                    <p>Laundry Care</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- PRODUCT SECTION -->
-        <section class="section">
-            <h2>Popular Daily Essentials</h2>
-
-            <div class="products">
-
-                <div class="product-card">
-                    <div class="product-image">🧴</div>
-                    <p class="product-name">Body Lotion</p>
-                    <p class="product-info">200 ml</p>
-                    <div class="product-bottom">
-                        <strong>₹149</strong>
-                        <button>ADD</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">🪒</div>
-                    <p class="product-name">Shaving Kit</p>
-                    <p class="product-info">1 pack</p>
-                    <div class="product-bottom">
-                        <strong>₹199</strong>
-                        <button>ADD</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">🧴</div>
-                    <p class="product-name">Shampoo</p>
-                    <p class="product-info">180 ml</p>
-                    <div class="product-bottom">
-                        <strong>₹129</strong>
-                        <button>ADD</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">🪥</div>
-                    <p class="product-name">Toothpaste</p>
-                    <p class="product-info">150 g</p>
-                    <div class="product-bottom">
-                        <strong>₹99</strong>
-                        <button>ADD</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">🌸</div>
-                    <p class="product-name">Deodorant</p>
-                    <p class="product-info">150 ml</p>
-                    <div class="product-bottom">
-                        <strong>₹179</strong>
-                        <button>ADD</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">🧼</div>
-                    <p class="product-name">Face Wash</p>
-                    <p class="product-info">100 ml</p>
-                    <div class="product-bottom">
-                        <strong>₹119</strong>
-                        <button>ADD</button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- BOTTOM BANNER -->
-        <section class="bottom-banner">
-            <h2>Everything you need, delivered in minutes!</h2>
-            <p>Fresh groceries and daily essentials at your doorstep.</p>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
     <footer>
-        <div class="footer-logo">blink<span>it</span></div>
-
-        <div class="footer-links">
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-        </div>
-
-        <p>© Blinkit. All rights reserved.</p>
+        <a href="#" class="logo">blink<span>it</span></a>
+        <p>Groceries and everyday essentials delivered fast.</p>
     </footer>
 
+</main>
 </body>
 </html>
